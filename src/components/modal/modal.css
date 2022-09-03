@@ -1,0 +1,84 @@
+.darkBG {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal {
+  width: 35vw;
+  min-width: 350px;
+  min-height: 30vh;
+  background: white;
+  z-index: 10;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+  padding: 25px;
+}
+
+.modalBody {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.inputLabel {
+  width: 150px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.modalInputs {
+  font-size: 18px;
+  border: 1px solid #545657;
+  background: #ecf0f1;
+  padding: 5px;
+}
+
+.modalInputs::-webkit-outer-spin-button,
+.modalInputs::-webkit-inner-spin-button {
+  display: none;
+}
+
+.saveBtn {
+  cursor: pointer;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #0075ff;
+  color: white;
+  border: none;
+}
+
+@media screen and (max-width: 960px) {
+  .inputLabel {
+    width: 120px;
+    font-size: 14px;
+  }
+
+  .modalInputs {
+    font-size: 14px;
+  }
+}
